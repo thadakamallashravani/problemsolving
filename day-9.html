@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let arr=[1,2,5,4,6,8,10,12]
+      min=arr[0]
+      max=[0]
+      for(i=0;i<arr.length;i++){
+        if(arr[i]>max){
+            max=arr[i]
+        }
+        if(arr[i]<min){
+            min=arr[i]
+        }
+      } 
+      console.log(min,max);
+      if(!arr.includes(2)){
+        console.log("missing prime is");
+      }
+      else{
+        for(j=min;j<max;j++){
+          fact=0
+          for(i=2;i<j;i++){
+            if(j%i==0){
+              fact++
+              break
+            }
+          }
+          if (fact==0&&!arr.includes(j)){
+            console.log(j,"is the missing prime");
+          }
+        }
+      }
+    </script>
+</body>
+</html>

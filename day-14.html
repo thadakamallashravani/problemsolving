@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task-1
+    let str = "shravani";
+    count=0
+    for(i of str){
+        if(i=="a"||i=="e"||i=="i"||i=="o"||i=="u"){
+            console.log(i);
+            count++
+        }
+    }
+    for(i of str){
+        if(i!=="a"&&i!=="e"&&i!=="i"&&i!=="o"||i=="u"){
+            console.log(i);
+            count++
+        }
+    }
+    console.log(count);
+    
+     //    task-2
+       let str1 = "Sreeja";
+       uppercaseCount = 0;
+      lowercaseCount = 0;
+      for (let i of str1) {
+    if (i === i.toUpperCase() && i!== i.toLowerCase()) {
+        uppercaseCount++;
+    }  
+    else if (i === i.toLowerCase() && i!== i.toUpperCase()) {
+        lowercaseCount++;
+    }
+   }
+     console.log("Uppercase characters is:" + uppercaseCount);
+     console.log("Lowercase characters is:" + lowercaseCount);
+
+        //   task-3
+        let input = "programme";
+        vowels = "aeiouAEIOU";
+         result = "";
+       for ( i = 0; i < input.length; i++) {
+     if (i % 2 === 0 && vowels.includes(input[i])) {
+        result += input[i] + ",";
+     }
+   }
+  if (result.length > 0) {
+    result = result.slice(0, -1); 
+}
+console.log(result);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task-1
+        let num=323
+        rev=0
+        check=num
+        while(num!=0){
+            last=num%10
+            rev=rev*10+last
+            num=Math.floor(num/10)
+        }
+        if(rev==check){
+            console.log("palindrome number"); 
+        }
+        else{
+            console.log("not a palindrome"); 
+        }
+
+        // task-2
+        let a=5
+        let b=5
+        num=1000
+        for(i=1;i<=15;i++){
+            if(a>=num){
+                break;
+            }
+            console.log(a);
+            c=a+b
+            a=b
+            b=c
+        }
+    </script>
+</body>
+</html>
