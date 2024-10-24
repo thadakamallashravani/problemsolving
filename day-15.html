@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task-1
+        let str1 = "SHRavani"
+         result = "";
+       for ( j of str1) {
+    if (j === j.toUpperCase()) {
+        result += j.toLowerCase();  
+    } else {
+        result += j.toUpperCase();  
+    }
+   }
+  console.log(result);
+           
+        //  tas-2
+        let end = "    Sreeja  ";  
+         trim_end = "";        
+         count = 0;             
+         let i;                    
+         for (i = end.length - 1; i >= 0; i--) {
+         if (end[i] !== " ") {
+          trim_end = end[i] + trim_end;  
+            count = 1;  
+         } 
+         else if (count === 1) {
+           trim_end = end[i] + trim_end;
+            }
+            }
+             console.log(trim_end);  
+
+        // task-3
+       let str= " JscrAViptA"
+         upper = "";
+         lower = "";
+
+       for (i of str) {
+       if (i === i.toUpperCase()) {
+        upper += i.toUpperCase();  
+      }
+       else {
+        lower += i.toLowerCase();  
+    }
+   }
+ result = upper + lower;
+  console.log(result);
+    </script>
+</body>
+</html>
