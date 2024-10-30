@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // task-1
+         num = 5;
+          for(i=num;i>=1;i--) { 
+             s="";
+          for(j=i;j>=1;j--) {
+          s=s+j+" "; 
+         }
+          console.log(s); 
+           }
+ 
+    
+    //    task-2
+        num1 = 5;
+        for(i=1;i<=num1;i++) {
+         s = "";
+        code = 97; // ASCII code for 'a'
+       for(sp=0;sp<num1-i;sp++) {
+        s += " ";
+        } 
+     for(j=1;j<=i;j++) {
+        s=s+String.fromCharCode(code) + " ";
+        code++;
+        }
+      console.log(s);
+         }
+
+        //  task-3
+        vowels="aeiou"
+        num2=5
+        for(i=1;i<=num2;i++){
+            s=""
+            for(sp1=0;sp1<num-1;sp1++){
+                s=s+" "
+            }
+            for(j=0;j<i;j++){
+                s=s+vowels[j]+" "
+            }
+            console.log(s);
+            
+        }
+    </script>
+</body>
+</html>
