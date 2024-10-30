@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task-1
+         num = 5;
+         for(i=1; i<=num;i++) {
+         s="";  
+         for(j=1;j<=num;j++) {
+         if(i==1||i==num||j== 1){
+            s= s+"*"+""
+         } 
+         else{
+         s=s+" "+""
+         }
+         }
+         console.log(s);  
+           }
+
+        //    task-2
+          num1=5;
+         for(i=1;i<=num1;i++) {
+         s="";  
+         for(j=1;j<=num1;j++) {
+         if(i==num1||j== 1||j==num1){
+            s= s+"*"+""
+         } 
+         else{
+         s=s+" "+""
+         }
+         }
+         console.log(s);  
+           }
+
+        //    task-3
+        num2=5;
+         for(i=1;i<=num2;i++) {
+         s="";  
+         for(j=1;j<=num2;j++) {
+         if (i==1||j==Math.ceil(num2/2)) {
+            s=s+"*";
+         } 
+         else {
+            s=s+" ";
+         }
+         }
+         console.log(s);  
+           }
+
+        //    task-4
+           num3=5;
+           for(i=1;i<=num3;i++) {
+            s="";  
+          for(j=1;j<=num3;j++) {
+           if (
+            (i==1)||(i==Math.ceil(num3/2))||(i==num3)||// Top row,Middle row,Bottom row,
+            (i<Math.ceil(num3/2)&&j==1) || // Left side for the top half
+            (i>Math.ceil(num3/2)&&j==num3)   // Right side for the bottom half
+           ) {
+            s=s+"*";
+             } 
+           else{
+            s=s+" ";
+         }
+         }
+         console.log(s);  
+         }
+    </script>
+</body>
+</html>
