@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task-1
+        num = 5;
+      for(i=1;i<=num;i++) {
+       s="";  
+      for(j=1;j<=num;j++) {
+        if (
+            j === 1 || j === num || // Left and right columns
+            i === j                 // Diagonal from top-left to bottom-right
+        ){
+            s=s+"*"+" ";
+        } else {
+            s=s+ " "+" ";
+        }
+        }
+       console.log(s);  
+       }
+
+      // task-2
+
+       num2=5;
+      for(i=1;i<=num2;i++) {
+        s="";
+       for(j=1;j<=num2;j++) {
+        if (j===num2-i+1||j===num2||i===num2) {
+            s=s+"*"+" ";
+        } else {
+            s=s+" "+" ";
+        }
+       }
+        console.log(s);
+      }
+               
+
+    // task-3
+    num3=5;
+      for(i=1;i<=num3;i++) {
+       s="";
+      for(j=1;j<=num3;j++) {
+        if(i===1||j===1||j===num3-i+1) {
+            s=s+"*"+" ";
+        } else {
+            s=s+" "+" ";
+        }
+      }
+      console.log(s);
+     }
+
+    // task-4
+       num4=5
+       for(i=1;i<=num4;i++){
+        s=""
+        for(sp=0;sp<num4-i;sp++){
+        s=s+" "
+       }
+       for(j=1;j<=i;j++){
+        s=s+j+" "
+       }
+       console.log(s);
+    }
+    for(i=num4-1;i>=1;i--){
+        s=""
+        for(sp=0;sp<num4-i;sp++){
+            s=s+" "
+        }
+       for(j=1;j<=i;j++){
+        s=s+j+" "
+       }
+       console.log(s);
+       
+    }
+        
+
+           // task-5
+            num5=5;
+   for(i=num5;i>=1;i--){
+    s="";
+    for(sp=0;sp<num5-i;sp++) {
+        s=s+" ";
+    }
+    for (let j = 0; j < i; j++) {
+        s=s+String.fromCharCode(97+j)+" ";
+    }
+    console.log(s);
+    }
+    for(i=2;i<=num5;i++){
+       s="";
+    for(sp=0;sp<num5-i;sp++) {
+        s=s+" ";
+    }
+    for(j=0;j<i;j++){
+        s=s+String.fromCharCode(97+j)+" ";
+     }
+      console.log(s);
+        }
+
+    </script>
+</body>
+</html>
