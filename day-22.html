@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // task-1
+
+// a b c d e     
+//  a     d      
+//   a   c       
+//    a b        
+//     a      
+//    a b       
+//   a   c       
+//  a     d     
+// a b c d e     
+           
+         num=5;
+        for(i=1;i<=2*num-1;i++) {
+            s="";
+            code=97;
+            spaces=i<=num?i-1: 2 * num - i - 1;
+            cols = i <= num ?num-i+1:i-num+1;
+            for(sp=0;sp<spaces;sp++) {
+                s = s + " ";
+            }
+            for (j=1;j<=cols;j++) {
+                if(i<=num){
+                    if (j==1||j==cols||i==1||i==2*num-1) {
+                        s= s+String.fromCharCode(code) + " ";
+                        code++
+                    }
+                    else {
+                        s=s+" "+ " ";
+                        code++
+                    }
+                }
+                else{
+                    if(j==1||j==cols||i==2*num-1){
+                        s=s+String.fromCharCode(code+i-num)+" ";
+                        code--
+                    }
+                    else{
+                        s=s+" "+" "
+                        code--
+                    }
+                }
+                }
+            console.log(s);
+        }
+    </script>
+</body>
+</html>
